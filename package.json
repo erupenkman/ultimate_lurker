@@ -1,0 +1,36 @@
+{
+  "name": "ultimate-lurker",
+  "version": "0.0.0",
+  "description": "lurk reddit like a pro",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "erupenkman/ultimate-lurker",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "ultimate-lurker",
+    ""
+  ],
+  "dependencies": {
+    "connect": "^3.3.5",
+    "harmon": "^1.2.0",
+    "http-proxy": "^1.10.1"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.12.0",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
