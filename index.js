@@ -7,10 +7,9 @@ var selects = [];
 var simpleselect = {};
 
 simpleselect.query = 'div';
-simpleselect.func = function (node) {
+simpleselect.func = function () {
   console.log('simple select');
-   // node.createWriteStream().end('test123');
-}
+};
 
 
 var titleCensor = {
@@ -18,7 +17,7 @@ var titleCensor = {
   func: function (node) {
     node.innerHTML = 'REDACTED';
   }
-}
+};
 selects.push(simpleselect);
 selects.push(titleCensor);
 
@@ -30,7 +29,7 @@ var app = connect();
 var proxy = httpProxy.createProxyServer({
       changeOrigin: true,
       target: 'http://www.reddit.com:80'
-})
+});
 
 //Additional true parameter can be used to ignore js and css files.
 //app.use(require('../')([], selects), true);
