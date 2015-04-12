@@ -12,7 +12,15 @@ simpleselect.func = function (node) {
    // node.createWriteStream().end('test123');
 }
 
+
+var titleCensor = {
+  query: '.title',
+  func: function (node) {
+    node.innerHTML = 'REDACTED';
+  }
+}
 selects.push(simpleselect);
+selects.push(titleCensor);
 
 //
 // Basic Connect App
